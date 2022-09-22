@@ -57,9 +57,10 @@ if bin_data is not None:
     sf.write(outfilename, bin_data, fs, format='wav')
     per = progress_bar(bar, percentage, per)
 
-    st.write('[3/3] _Generating download link ..._')
-    href = proc.get_binary_file_downloader_html(outfilename, 'Audio file')
-    st.markdown(href, unsafe_allow_html=True)
+    st.write('[3/3] _Generating audio file ..._')
+    # href = proc.get_binary_file_downloader_html(outfilename, 'Audio file')
+    # st.markdown(href, unsafe_allow_html=True)
+    st.audio(outfilename)
     per = progress_bar(bar, percentage, per)
 
     st.success('ALL DONE!!')
