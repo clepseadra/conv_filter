@@ -1,4 +1,3 @@
-from turtle import onclick
 import streamlit as st
 import soundfile as sf
 import proc
