@@ -1,2 +1,3 @@
 [server]
-maxUploadSize = 900
+maxUploadSize = 500
+maxMessageSize = 500
