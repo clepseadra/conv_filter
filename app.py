@@ -19,10 +19,11 @@ st.sidebar.write('### 3. 補正処理実行')
 bin_data = None
 
 def progress_bar(bar, percentage, val):
-    bar.progress(val + ADDVAL)
-    percentage.text(f'{val + ADDVAL} %')
+    val_post = val + ADDVAL
+    bar.progress(val_post)
+    percentage.text(f'{val_post} %')
 
-    return val + ADDVAL
+    return val_post
 
 
 if coef_file is not None and data_file is not None:
