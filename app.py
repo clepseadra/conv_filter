@@ -6,7 +6,7 @@ MAXNUM = 4
 ADDVAL = 25
 per = 0
 
-st.title('関係者用 補正処理ツール')
+st.title('補正処理ツール（内部用）')
 st.write('←サイドバーにファイルをアップロードし、`Process`ボタンを押してください。')
 
 st.sidebar.write('### 1. 補正係数ファイルの指定')
